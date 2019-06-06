@@ -112,4 +112,9 @@ msf5 > msfdb init
 [+] Creating initial database schema
 msf5 > 
 
+msf5 > workspace -d default 
+[*] Deleted workspace: default
+[*] Recreated the default workspace
+msf5 > hosts
+
 
