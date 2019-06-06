@@ -86,3 +86,20 @@ msf5 > db_nmap -v -sV 192.168.1.1-255
 [*] Nmap: Discovered open port 995/tcp on 192.168.1.41
 [*] Nmap: Discovered open port 23/tcp on 192.168.1.5
 [*] Nmap: Discovered open port 25/tcp on 192.168.1.41
+
+msf5 > msfdb delete
+[*] exec: msfdb delete
+
+[i] Database already started
+[+] Dropping databases 'msf'
+dropdb: la suppression de la base de données a échoué : ERROR:  database "msf" is being accessed by other users
+DÉTAIL : There are 3 other sessions using the database.
+[+] Dropping databases 'msf_test'
+[+] Dropping database user 'msf'
+dropuser : la suppression du rôle « msf » a échoué : ERROR:  role "msf" cannot be dropped because some objects depend on it
+DÉTAIL : owner of database msf
+136 objects in database msf
+[+] Deleting configuration file /usr/share/metasploit-framework/config/database.yml
+[+] Stopping database
+
+
