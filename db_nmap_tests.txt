@@ -149,4 +149,21 @@ msf5 auxiliary(scanner/ip/ipidseq) > run
 [*] 192.168.1.46's IPID sequence class: Unknown
 [*] 192.168.1.1's IPID sequence class: Unknown
 [*] 192.168.1.50's IPID sequence class: Unknown
+[*] Scanned  36 of 255 hosts (14% complete)
+[*] Scanned  52 of 255 hosts (20% complete)
+[*] Scanned  78 of 255 hosts (30% complete)
+[*] Scanned 102 of 255 hosts (40% complete)
+[*] Scanned 142 of 255 hosts (55% complete)
+[*] Scanned 156 of 255 hosts (61% complete)
+[*] Scanned 181 of 255 hosts (70% complete)
+[*] 192.168.1.206's IPID sequence class: Incremental!
+[*] 192.168.1.219's IPID sequence class: Incremental!
+[*] 192.168.1.232's IPID sequence class: Incremental!
+[*] Scanned 206 of 255 hosts (80% complete)
+[*] Scanned 248 of 255 hosts (97% complete)
+[*] 192.168.1.251's IPID sequence class: Incremental!
+[*] 192.168.1.255's IPID sequence class: Incremental!
+[*] Scanned 255 of 255 hosts (100% complete)
+[*] Auxiliary module execution completed
+msf5 auxiliary(scanner/ip/ipidseq) > 
 
