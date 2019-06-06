@@ -117,4 +117,36 @@ msf5 > workspace -d default
 [*] Recreated the default workspace
 msf5 > hosts
 
+msf5 > use auxiliary/scanner/ip/ipidseq 
+
+msf5 auxiliary(scanner/ip/ipidseq) > set RHOSTS 192.168.1-255
+RHOSTS => 192.168.1-255
+msf5 auxiliary(scanner/ip/ipidseq) > set THREADS 50
+THREADS => 50
+msf5 auxiliary(scanner/ip/ipidseq) > run
+[-] Auxiliary failed: Msf::OptionValidateError The following options failed to validate: RHOSTS.
+msf5 auxiliary(scanner/ip/ipidseq) > set RHOSTS 192.168.1.1-255
+RHOSTS => 192.168.1.1-255
+msf5 auxiliary(scanner/ip/ipidseq) > run
+
+[*] 192.168.1.40's IPID sequence class: Unknown
+[*] 192.168.1.31's IPID sequence class: Incremental!
+[*] 192.168.1.37's IPID sequence class: Unknown
+[*] 192.168.1.27's IPID sequence class: Unknown
+[*] 192.168.1.33's IPID sequence class: Unknown
+[*] 192.168.1.35's IPID sequence class: Unknown
+[*] 192.168.1.39's IPID sequence class: Unknown
+[*] 192.168.1.25's IPID sequence class: Unknown
+[*] 192.168.1.32's IPID sequence class: Unknown
+[*] 192.168.1.6's IPID sequence class: Unknown
+[*] 192.168.1.22's IPID sequence class: Unknown
+[*] 192.168.1.24's IPID sequence class: Unknown
+[*] 192.168.1.5's IPID sequence class: Unknown
+[*] 192.168.1.11's IPID sequence class: Unknown
+[*] 192.168.1.10's IPID sequence class: Unknown
+[*] 192.168.1.41's IPID sequence class: Unknown
+[*] 192.168.1.45's IPID sequence class: Unknown
+[*] 192.168.1.46's IPID sequence class: Unknown
+[*] 192.168.1.1's IPID sequence class: Unknown
+[*] 192.168.1.50's IPID sequence class: Unknown
 
